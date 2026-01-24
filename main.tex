@@ -1,0 +1,292 @@
+%-------------------------
+% Resume in Latex
+% Author : SHADMAN SALIF SWANAN
+% Based off of: https://github.com/Shad1573/CV
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=RoyalBlue,
+    citecolor=black
+}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[normalem]{ulem} % for underline
+
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+\newcommand{\bluelink}[2]{\href{#1}{\textcolor{RoyalBlue}{\uline{#2}}}}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Shadman Salif Swanan} \\ \vspace{6pt}
+    \small
+    \faPhone* \hspace{2pt} \texttt{+880 1727-920359}
+    \hspace{6pt} $|$ \hspace{6pt}
+    \faEnvelope \hspace{2pt}
+    \bluelink{mailto:shadmansalif@gmail.com}{\texttt{shadmansalif@gmail.com}}
+    \hspace{6pt} $|$ \hspace{6pt}
+    \faGithub \hspace{2pt}
+    \bluelink{https://github.com/Shad1573}{\texttt{Shad1573}}
+    \hspace{6pt} $|$ \hspace{6pt}
+    \faLinkedin \hspace{2pt}
+    \bluelink{https://www.linkedin.com/in/shadman-salif-swanan/}{\texttt{Shadman Salif Swanan}}
+    \\ \vspace{-4pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BRAC University}{Jan. 2022 -- Present}
+      {Bachelor of Science in Computer Science and Engineering (CSE)}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{\textbf{CGPA}: 3.82 out of 4.00}
+        \resumeItem{\textbf{Programming Coursework}: Fundamentals of Programming, Object-Oriented Programming, Data Structures \& Algorithms}
+        \resumeItem{\textbf{Computational Coursework}: Natural Language Processing, Linear Algebra, Neural Networks, Digital Logic Design, VLSI Design, Discrete Mathematics}
+        \resumeItem{\textbf{Programming Languages}: Python, Java, C/C++, JavaScript, TypeScript}
+        \resumeItem{\textbf{Frameworks \& Tools}: Git, OpenGL, MySQL, React, Next.js, MERN Stack, Figma, Detectron2}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{BracBalance} \bluelink{https://github.com/WaisKafia/Bracbalance}{\faGithub}}{}
+      \resumeItemListStart
+        \resumeItem{Banking and finance management application designed to track expenses and manage personal financial records}
+        \resumeItem{Implemented core transaction logic and data handling features to ensure accurate balance tracking}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Natural Language Processing – POS Tagging} \bluelink{https://github.com/Shad1573/Natural-Language-Processing}{\faGithub}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented token-level Part-of-Speech tagging using multiple RNN-based architectures on the POS1 dataset}
+        \resumeItem{Compared performance of different recurrent models for sequence labeling tasks}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Shikkha.com} \bluelink{https://github.com/Shad1573/Shikkha.com}{\faGithub}}{}
+      \resumeItemListStart
+        \resumeItem{Developed an Ed-Tech platform using JavaScript to support digital learning and content delivery}
+        \resumeItem{Designed modular front-end components for scalability and user interaction}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Cafeteria Management System} \bluelink{https://github.com/Shad1573/Cafeteria_Management_System}{\faGithub}}{}
+      \resumeItemListStart
+        \resumeItem{Built a management system to automate cafeteria operations including order handling and record management}
+        \resumeItem{Improved operational efficiency through structured data storage and processing}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Voting System (x86 Assembly)} \bluelink{https://github.com/Shad1573/Microprocessor}{\faGithub}}{}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a secure voting system interface using emu8086 and x86 Assembly}
+        \resumeItem{Included voter authentication, eligibility verification, and vote recording mechanisms}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{3D Car Racing Game} \bluelink{https://github.com/Shad1573/Computer-Graphics}{\faGithub}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a 3D car racing game using OpenGL featuring player controls, enemy vehicles, and environmental effects}
+        \resumeItem{Implemented game mechanics including movement physics, collision logic, and camera control}
+      \resumeItemListEnd
+
+
+
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{RESEARCH EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Thesis Research}{Sept. 2025 -- Present}
+      {BRAC University}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Conducting research on \textbf{semantic drift in the Bengali language} using diachronic word embeddings and transformer-based representations}
+        \resumeItem{Reviewed and analyzed prior literature on semantic change detection, historical embeddings, and contextual language models}
+        \resumeItem{Developing a column detection model for scanned Bengali newspapers to improve document layout understanding}
+        \resumeItem{Building an OCR pipeline to construct a clean and high-quality diachronic text corpus for downstream NLP tasks}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------CO-CURRICULAR ACTIVITIES-----------
+\section{CO-CURRICULAR ACTIVITIES}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Notre Dame Nature Study Club}{}
+      {Vice President, Department of Photography}{}
+      \resumeItemListStart
+        \resumeItem{Led photography initiatives and coordinated visual documentation for club activities and events}
+        \resumeItem{Managed team members and contributed to creative direction and event coverage}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Ideal English Language Club}{}
+      {General Member}{}
+      \resumeItemListStart
+        \resumeItem{Assisted in organizing language-focused programs, workshops, and internal club operations}
+        \resumeItem{Contributed to communication management and event coordination}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {BRAC University Residential Semester}{}
+      {Stage Drama Course Participant}{}
+      \resumeItemListStart
+        \resumeItem{Completed an intensive stage drama course emphasizing teamwork, communication, and performance skills}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {BRAC University Sports Activities}{}
+      {Football Achievements}{}
+      \resumeItemListStart
+        \resumeItem{Runners-Up, RS Cup}
+        \resumeItem{Runners-Up, Residential Semester Football Tournament}
+        \resumeItem{Champion and Top Scorer, Intra-Spring Football Tournament, BRAC University}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
