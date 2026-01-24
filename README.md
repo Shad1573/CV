@@ -1,2 +1,1 @@
 # CV
-MY LATEX CV
