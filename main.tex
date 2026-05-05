@@ -35,7 +35,7 @@
 
 % fixed width
 \usepackage[scale=0.90,lf]{FiraMono}
-
+\usepackage{graphicx}
 % light-grey
 \definecolor{light-grey}{gray}{0.83}
 \definecolor{dark-grey}{gray}{0.3}
@@ -146,21 +146,31 @@
 \begin{document}
 
 %----------HEADING----------
-\begin{center}
-    \textbf{\Huge Shadman Salif Swanan} \\ \vspace{6pt}
-    \small
-    \faPhone* \hspace{2pt} \texttt{+880 1727-920359}
-    \hspace{6pt} $|$ \hspace{6pt}
-    \faEnvelope \hspace{2pt}
-    \bluelink{mailto:shadmansalif@gmail.com}{\texttt{shadmansalif@gmail.com}}
-    \hspace{6pt} $|$ \hspace{6pt}
-    \faGithub \hspace{2pt}
-    \bluelink{https://github.com/Shad1573}{\texttt{Shad1573}}
-    \hspace{6pt} $|$ \hspace{6pt}
-    \faLinkedin \hspace{2pt}
-    \bluelink{https://www.linkedin.com/in/shadman-salif-swanan-79561b1b6/}{\texttt{Shadman Salif Swanan}}
-    \\ \vspace{-4pt}
-\end{center}
+%----------HEADING----------
+\vspace*{-12pt}
+
+\noindent
+\begin{minipage}[c]{0.78\textwidth}
+    {\Huge \textbf{Shadman Salif Swanan}}\\[4pt]
+
+    \normalsize
+    \faPhone* \hspace{3pt} +880 1727-920359 \hspace{8pt} | \hspace{8pt}
+    \faEnvelope \hspace{3pt}
+    \bluelink{mailto:shadmansalif@gmail.com}{shadmansalif@gmail.com} \\[4pt]
+
+    \normalsize
+    \faGithub \hspace{3pt}
+    \bluelink{https://github.com/Shad1573}{github.com/Shad1573}
+    \hspace{8pt} | \hspace{8pt}
+    \faLinkedin \hspace{3pt}
+    \bluelink{https://www.linkedin.com/in/shadman-salif-swanan-79561b1b6/}{LinkedIn Profile}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.18\textwidth}
+    \includegraphics[width=\linewidth]{profile.jpg}
+\end{minipage}
+
+\vspace{-8pt}
 
 
 %-----------EDUCATION-----------
@@ -172,53 +182,82 @@
       \resumeItemListStart
         \resumeItem{\textbf{CGPA}: 3.82 out of 4.00}
         \resumeItem{\textbf{Programming Coursework}: Fundamentals of Programming, Object-Oriented Programming, Data Structures \& Algorithms}
-        \resumeItem{\textbf{Computational Coursework}: Natural Language Processing, Computer Network, Linear Algebra, Neural Networks, Digital Logic Design, VLSI Design, Discrete Mathematics}
+        \resumeItem{\textbf{Computational Coursework}: Natural Language Processing, Artificial Intelligence, Computer Network, Linear Algebra, Neural Networks, Digital Logic Design, VLSI Design, Discrete Mathematics}
         \resumeItem{\textbf{Programming Languages}: Python, Java, C/C++, JavaScript, TypeScript}
-        \resumeItem{\textbf{Frameworks \& Tools}: PyTorch, OpenCV, NumPy, Matplotlib, Scikit-learn, Git, OpenGL, MySQL, React, Next.js, Figma}
+        \resumeItem{\textbf{Frameworks \& Tools}: PyTorch, OpenCV, NumPy, Matplotlib, Scikit-learn, Git, OpenGL, MySQL, React, Next.js, Figma, Cisco Packet Tracer}
       \resumeItemListEnd
+     \resumeSubheading
+  {Notre Dame College}{2018 -- 2021}
+  {Higher Secondary Certificate (HSC), Science}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA}: 5.00 out of 5.00}
+
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Ideal School and College}{2008 -- 2018}
+  {Secondary School Certificate (SSC), Science}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA}: 5.00 out of 5.00}
+
+  \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
 
 %-----------PROJECTS-----------
 \section{PROJECTS}
-\resumeSubHeadingListStart
+ \resumeSubHeadingListStart
 
-\resumeItem{\textbf{Token-Level POS Tagging using RNN Models} \bluelink{https://github.com/Shad1573/Token-Level-Part-of-Speech-Tagging-Using-Recurrent-Neural-Networks}{\faGithub} — Implemented POS tagging using RNN, LSTM, GRU, and BiLSTM architectures}
+   \resumeItem{\textbf{\bluelink{https://github.com/Shad1573/Token-Level-Part-of-Speech-Tagging-Using-Recurrent-Neural-Networks}{Token-Level POS Tagging using RNN Models}} — Implemented POS tagging using RNN, LSTM, GRU, and BiLSTM architectures}
 
-\resumeItem{\textbf{Disease Prediction using Machine Learning} \bluelink{https://github.com/Shad1573/Project-on-Disease-Prediction}{\faGithub} — Developed classification models for diabetes prediction using KNN, Decision Tree, and Naive Bayes}
+   \resumeItem{\textbf{\bluelink{https://github.com/Shad1573/Project-on-Disease-Prediction}{Disease Prediction using Machine Learning}} — Developed classification models for diabetes prediction using KNN, Decision Tree, and Naive Bayes}
 
-\resumeItem{\textbf{Shikkha.com} \bluelink{https://github.com/Shad1573/Shikkha.com}{\faGithub} — Developed an educational platform using JavaScript for digital learning support}
+   \resumeItem{\textbf{\bluelink{https://github.com/Shad1573/Shikkha.com}{Shikkha.com}} — Developed an educational platform using JavaScript for digital learning support}
 
-\resumeItem{\textbf{3D Car Racing Game} \bluelink{https://github.com/Shad1573/3D-Car-Racing-Using-OpenGL}{\faGithub} — Built a 3D racing game using OpenGL with enemy AI, shooting mechanics, weather effects, and camera modes}
+   \resumeItem{\textbf{\bluelink{https://github.com/Shad1573/Federal-Flight-Agency-Mission-Critical-Aerospace-Network-Design}{Federal Flight Agency Mission-Critical Aerospace Network Design}} — Designed a secure and scalable aerospace network architecture for mission-critical communication systems}
 
-\resumeItem{\textbf{Automated Sanitizer and Mask Dispensing Robot} \bluelink{https://github.com/Shad1573/Automated-Sanitizer-and-Mask-Dispensing-Robot}{\faGithub} — Embedded systems project integrating automated sanitizer dispensing and mask detection}
+   \resumeItem{\textbf{\bluelink{https://github.com/Shad1573/3D-Car-Racing-Using-OpenGL}{3D Car Racing Game}} — Built a 3D racing game using OpenGL with enemy AI, shooting mechanics, weather effects, and camera modes}
 
-\resumeItemListEnd
+   \resumeItem{\textbf{\bluelink{https://github.com/Shad1573/Automated-Sanitizer-and-Mask-Dispensing-Robot}{Automated Sanitizer and Mask Dispensing Robot}} — Embedded systems project integrating automated sanitizer dispensing and mask detection}
+
+ \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------RESEARCH EXPERIENCE-----------
-\section{RESEARCH EXPERIENCE}
+\section{RESEARCH}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {Undergraduate Thesis Research}{Sept. 2025 -- Present}
-      {BRAC University}{Dhaka, Bangladesh}
+      {BRAC University}{}
       \resumeItemListStart
-        \resumeItem{Conducting research on \textbf{semantic drift in the Bengali language} using diachronic word embeddings and transformer-based representations}
-        \resumeItem{Reviewed and analyzed prior literature on semantic change detection, historical embeddings, and contextual language models}
-        \resumeItem{Developing a column detection model for scanned Bengali newspapers to improve document layout understanding}
-        \resumeItem{Building an OCR pipeline to construct a clean and high-quality diachronic text corpus for downstream NLP tasks}
+        \resumeItem{Conducting research on \textbf{semantic drift in the Bengali language} using diachronic word embeddings and transformer-based representations.}
+        \resumeItem{Developing a column detection model for scanned Bengali newspapers to improve document layout understanding.}
+        \resumeItem{Building an OCR pipeline to construct a clean and high-quality diachronic text corpus for downstream NLP tasks.}
+        \resumeItem{Performed \textbf{Exploratory Data Analysis (EDA)} to quantify OCR error distributions and validated post-processing techniques that reduced linguistic noise across a 120-year diachronic corpus}
+        \resumeItem{Successfully pre-trained a custom \textbf{Historical BanglaBERT} model from scratch using the curated diachronic corpus.}
+
+
       \resumeItemListEnd
 
     \resumeSubheading
-      {Leaf Disease Research (TinyResNet)}{April 2026}
-      {Independent Research Project}{Dhaka, Bangladesh}
+{\bluelink{https://github.com/Shad1573/leaf-disease-research}{Leaf Disease Research (TinyResNet)}}{April 2026}
+{Independent Research Project}{}
       \resumeItemListStart
         \resumeItem{Developed a lightweight deep learning model (TinyResNet) for tomato leaf disease classification under real-world conditions}
         \resumeItem{Proposed \textbf{distortion-aware augmentation} (blur, noise, low-light) to improve model robustness}
         \resumeItem{Conducted comparative analysis with ResNet18 baseline, achieving \textbf{96.59\% accuracy} and superior generalization}
         \resumeItem{Evaluated model performance using confusion matrix, precision, recall, and F1-score across multiple disease classes}
+      \resumeItemListEnd
+    \resumeSubheading
+{ \bluelink{https://github.com/Shad1573/Fraud-Detection-Realtime}{Real-Time Fraud Detection System} }{May 2026}
+      {Independent Research Project}{}
+      \resumeItemListStart
+        \resumeItem{Engineered an end-to-end ML pipeline using \textbf{LightGBM} to identify fraudulent credit card transactions within a highly imbalanced dataset (0.17\% fraud rate).}
+        \resumeItem{Implemented \textbf{cost-sensitive learning} via scale-pos-weight and threshold tuning to optimize the precision-recall trade-off, ensuring detection of high-risk "micro-charges."}
+        \resumeItem{Developed a live monitoring console in \textbf{Python} that simulates real-time transaction streams and triggers instant security alerts based on model probability scores.}
+        \resumeItem{Performed extensive \textbf{Exploratory Data Analysis (EDA)} using Seaborn and Matplotlib to visualize feature correlations and isolate anomalies in PCA-transformed transaction data.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -250,20 +289,7 @@
         \resumeItem{Demonstrated strong organizational skills, adaptability, and ability to work efficiently under pressure}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Notre Dame Eco \& Space Club}{Oct. 2018}
-      {Organizing Team Member -- 2nd National Space Camp}{}
-      \resumeItemListStart
-        \resumeItem{Contributed to organizing a national-level space camp across School, College, and Open categories}
-        \resumeItem{Coordinated logistics and supported event execution for participants and organizers}
-      \resumeItemListEnd
 
-    \resumeSubheading
-      {Notre Dame Art Club}{2018}
-      {Volunteer -- 2nd National Art Carnival \& Exhibition}{}
-      \resumeItemListStart
-        \resumeItem{Supported event operations and assisted in organizing a large-scale art exhibition}
-      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 %
@@ -279,13 +305,7 @@
         \resumeItem{Managed team members and contributed to creative direction and event coverage}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Ideal English Language Club}{}
-      {General Member}{}
-      \resumeItemListStart
-        \resumeItem{Assisted in organizing language-focused programs, workshops, and internal club operations}
-        \resumeItem{Contributed to communication management and event coordination}
-      \resumeItemListEnd
+
 
     \resumeSubheading
       {BRAC University Residential Semester}{}
