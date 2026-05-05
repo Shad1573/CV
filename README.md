@@ -14,6 +14,7 @@ I enjoy building real-world systems, working on research problems, and developin
 ## 📌 Contents
 - 📄 Resume.tex — Source LaTeX file  
 - 📄 Resume.pdf — Compiled version of my CV  
+- 📄 Shadman Salif Swanan_Resume.pdf — Final resume document
 
 ---
 
@@ -41,7 +42,9 @@ I enjoy building real-world systems, working on research problems, and developin
 ## 📥 Download CV
 👉 Click here to view/download my CV
 
+You can also download: **Shadman Salif Swanan_Resume.pdf**
+
 ---
 
 ## ⭐ Note
-This repository is maintained to keep my CV up-to-date. Feel free to explore my projects and connect with m
+This repository is maintained to keep my CV up-to-date. Feel free to explore my projects and connect with me!
